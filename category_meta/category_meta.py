@@ -70,7 +70,8 @@ def make_category(article, slug):
 
     # Setting a category's name resets its slug, so do that first.
     category.name = article.title
-    category.slug = slug
+    # temp workaround for issues with slug assignment
+    # category.slug = slug
 
     # Description from article text.
     # XXX Relative URLs in the article content may not be handled correctly.
